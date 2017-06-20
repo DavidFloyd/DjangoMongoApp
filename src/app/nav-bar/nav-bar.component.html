@@ -1,0 +1,4 @@
+<md-toolbar color="primary"><span>Task list</span><span class="fill-space"></span>
+  <button md-button (click)="authService.signIn()" *ngIf="!authService.authenticated()">Sign in</button>
+  <button md-button (click)="authService.signOut()" *ngIf="authService.authenticated()">Sign out</button>
+</md-toolbar>
